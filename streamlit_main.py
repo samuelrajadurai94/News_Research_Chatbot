@@ -19,8 +19,8 @@ load_dotenv()
 
 # Creat token from hugging face website and use it.
 #load hugging face token key key
-os.environ['HF_TOKEN'] = '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'
-os.environ['HUGGINGFACEHUB_API_TOKEN'] = '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'
+os.environ['HF_TOKEN'] = ''
+os.environ['HUGGINGFACEHUB_API_TOKEN'] = ''
 
 st.markdown("<h1 style='text-align: center;'>CLEVER BOT</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center;'>News Research Tool 📈</h3>", unsafe_allow_html=True)
