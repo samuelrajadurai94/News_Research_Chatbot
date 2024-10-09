@@ -50,6 +50,13 @@ hf = HuggingFaceEmbeddings(
     encode_kwargs = encode_kwargs
 )
 
+#we are using MISTRAL AI to process the retrieved documents and the query and generate human-like text.
+#LLMs are specifically designed and trained for generation tasks like answering questions, summarizing text, etc.
+#The LLM takes the retrieved documents and the query, and produces a coherent, human-readable response.
+#Mistral AI is an open-source LLM alternative to OpenAI's models that can be used without cost.
+#OpenAI's ChatGPT (or other LLMs like GPT-3, GPT-4) is not entirely free to use in our project, especially for API-based integration.
+#Open-source LLMs: Other models like LLaMA, Falcon, or GPT-Neo (from EleutherAI) are available for free
+
 from langchain.llms import HuggingFaceHub
 
 hf_mistral = HuggingFaceHub(
